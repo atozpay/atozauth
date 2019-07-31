@@ -1,13 +1,13 @@
-# AtozSso
+# Atozauth
 
-This gem for ATOZSSO API
+This gem for Atozauth API
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'atoz_sso'
+gem 'atozauth'
 ```
 
 And then execute:
@@ -16,15 +16,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install atoz_sso
+    $ gem install atozauth
 
 ## Usage
 
-    $ rails g atoz_sso:install
+    $ rails g atozauth:install
 
-this will generating file in config/initializer/atoz_sso.rb and please set your configuration sso API
+this will generating file in config/initializer/Atozauth.rb and please set your configuration sso API
 
-    AtozSso.configure do |config|
+    Atozauth.configure do |config|
       #config.app_id = ENV['sso_app_id']
       #config.app_secret = ENV['sso_app_secret']
       #config.app_client_key = ENV['sso_client_key']

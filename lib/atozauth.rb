@@ -1,7 +1,7 @@
-require "atoz_sso/version"
-require "atoz_sso/configuration"
+require "atozauth/version"
+require "atozauth/configuration"
 require "rails"
-module AtozSso
+module Atozauth
   class << self
   attr_accessor :configuration
   end
@@ -19,6 +19,6 @@ module AtozSso
   end
 end
 
-require "atoz_sso/base"
-require "atoz_sso/auth"
-require "atoz_sso/response"
+require "atozauth/base"
+require "atozauth/auth"
+require "atozauth/response"

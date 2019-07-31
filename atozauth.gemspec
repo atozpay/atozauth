@@ -1,11 +1,11 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require "atoz_sso/version"
+require "atozauth/version"
 
 Gem::Specification.new do |spec|
-  spec.name          = "atoz_sso"
-  spec.version       = AtozSso::VERSION
+  spec.name          = "atozauth"
+  spec.version       = Atozauth::VERSION
   spec.authors       = ["Gilang Ramadan"]
   spec.email         = ["mgrware@gmail.com"]
 

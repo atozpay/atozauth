@@ -1,4 +1,4 @@
-module AtozSso
+module Atozauth
   class Response
     def initialize(args)
       args.each do |attribute_name, attribute_value|

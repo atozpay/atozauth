@@ -1,4 +1,4 @@
-module AtozSso
+module Atozauth
   module Generators
     class InstallGenerator < Rails::Generators::Base
       source_root File.expand_path("../../templates", __FILE__)
@@ -6,7 +6,7 @@ module AtozSso
 
       def copy_initializer
         puts "create config file"
-        template "sso_initializer.rb", "config/initializers/atoz_sso.rb"
+        template "sso_initializer.rb", "config/initializers/atozauth.rb"
         puts "create migration file "
         template "sso_user_migration.rb", "db/migrate/#{Time.now.strftime("%Y%m%d%H%M%S")}_create_sso_users.rb"
         puts "create model"

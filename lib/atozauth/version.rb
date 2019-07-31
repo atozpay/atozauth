@@ -1,3 +1,3 @@
-module AtozSso
+module Atozauth
   VERSION = "0.1.0"
 end

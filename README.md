@@ -18,7 +18,7 @@ Or install it yourself as:
 
     $ gem install atozauth
 
-## Usage
+## Install Configuration
 
     $ rails g atozauth:install
 
@@ -30,6 +30,23 @@ this will generating file in config/initializer/Atozauth.rb and please set your 
       #config.app_client_key = ENV['sso_client_key']
       #config.end_point = ENV['sso_endpoint']
     end
+
+## Usage
+
+send data to api for validate phone number
+
+    validate_phone = Atozauth::Registration::ValidatePhone.new(phone: "087823290601")
+    response = validate_phone.send
+    puts response
+    `#<Atozauth::Response:0x007f99a5ee7b18 @code=200, @messages=["berhasil."], @phone="087823290601"> `
+
+validate otp
+
+    validate_otp = Atozauth::Registration::ValidateOtp.new(phone: "087823290601", otp: "1234")
+    response = validate_otp.send
+    puts response
+    `#<Atozauth::Response:0x007ff52b5c85c8 @code=402, @messages=["Phone number atau register code tidak valid."]>
+`
 
 
 ## Development

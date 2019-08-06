@@ -20,5 +20,7 @@ module Atozauth
 end
 
 require "atozauth/base"
-require "atozauth/auth"
+require "atozauth/auth/session"
 require "atozauth/response"
+require "atozauth/registration/validate_otp"
+require "atozauth/registration/validate_phone"

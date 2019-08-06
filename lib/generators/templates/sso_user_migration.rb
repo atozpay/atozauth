@@ -1,4 +1,4 @@
-class CreateSsoUsers < ActiveRecord::Migration
+class CreateSsoUsers < ActiveRecord::Migration<%= migration_version %>
   def change
     create_table :sso_users do |t|
       t.integer :uid

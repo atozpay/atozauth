@@ -45,8 +45,7 @@ validate otp
     validate_otp = Atozauth::Registration::ValidateOtp.new(phone: "087823290601", otp: "1234")
     response = validate_otp.send
     puts response
-    `#<Atozauth::Response:0x007ff52b5c85c8 @code=402, @messages=["Phone number atau register code tidak valid."]>
-`
+    `#<Atozauth::Response:0x007ff52b5c85c8 @code=402, @messages=["Phone number atau register code tidak valid."]>`
 
 
 ## Development

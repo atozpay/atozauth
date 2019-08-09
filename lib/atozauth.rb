@@ -3,7 +3,7 @@ require "atozauth/configuration"
 require "rails"
 module Atozauth
   class << self
-  attr_accessor :configuration
+    attr_accessor :configuration
   end
 
   def self.configuration

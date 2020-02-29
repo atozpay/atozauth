@@ -1,20 +1,20 @@
 PATH
   remote: .
   specs:
-    atoz-sso (0.1.0)
+    atozauth (0.1.0)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    rake (10.5.0)
+    rake (13.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  atoz-sso!
+  atozauth!
   bundler (~> 1.16)
-  rake (~> 10.0)
+  rake (~> 13.0)
 
 BUNDLED WITH
    1.16.6
